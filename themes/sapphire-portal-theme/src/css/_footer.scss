@@ -1,0 +1,36 @@
+div.footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid black;
+  width: 100%;
+  max-width: 1440px;
+  a, a:hover {
+    color: black;
+  }
+  .block {
+    font-family: $sapphire-typeface;
+    flex-direction: row;
+    min-height: 350px;
+    padding-top: 3em;
+  }
+  img.logos {
+    max-width: 80%;
+  }
+  .column-content {
+    font-weight: bolder;
+    line-height: 3em;
+    padding: 0;
+  }
+  .footer-social {
+    height: 1rem;
+    margin: 0 1rem 1rem 0;
+  }
+}

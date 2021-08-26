@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<licenses>
+<license>
+	<account-name>Liferay Trial</account-name>
+	<owner>Liferay Trial</owner>
+	<description>Internal Use</description>
+	<product-name>Digital Enterprise Development</product-name>
+	<product-version>7.3</product-version>
+	<license-name>Digital Enterprise Development</license-name>
+	<license-type>developer</license-type>
+	<license-version>6</license-version>
+	<start-date>Monday, November 9, 2020 12:00:00 AM GMT</start-date>
+	<expiration-date>Tuesday, November 9, 2021 12:00:00 AM GMT</expiration-date>
+	<max-http-sessions>5</max-http-sessions>
+	<key>b8f8a973b737e9a241b4434c075f2a80bf2632020f877bd81a6c52d07d9e1b3048d9713fb366aba3663bfa89e9dc4fdcc8156d3f1bf0c510c3f462032fdbacf1986b67a31c7cc63398d5407e2a5ca1d7d2acc94aec12e4ecad479827d7bbc8384c41cc0353b642cdf962a0a791850356788e06cc95985836addd9274578e4e02f0e98f8d</key>
+</license>
+<license>
+	<owner>Liferay Trial</owner>
+	<description>Internal Use</description>
+	<product-name>Liferay Commerce Subscription Development</product-name>
+	<product-id>9a473157-06a6-44b6-b017-a360ffaf5f38</product-id>
+	<product-version>1</product-version>
+	<license-type>developer</license-type>
+	<license-version>3</license-version>
+	<start-date>Monday, November 9, 2020 12:00:00 AM GMT</start-date>
+	<expiration-date>Wednesday, October 16, 2120 12:00:00 AM GMT</expiration-date>
+	<max-http-sessions>5</max-http-sessions>
+	<key>76ba33fb480ec51dadedb83ee6809a8a65e39b8f3579b446c0aecdaa18a45f249cb6f2917571d397008771a4dee39995c37293150338bc8d959fae27fe3cfdbd5d81fa0569220d22d76ce57ef802493fb7c5be13b024ba2db484f8feffd3aba65b65712d565c1551340998102d418ceccb35db8dbfb45f9041c4cae483d8717b</key>
+</license></licenses>

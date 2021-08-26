@@ -1,0 +1,23 @@
+{
+	"keywords": [
+		"liferay-theme"
+	],
+	"liferayTheme": {
+		"baseTheme": "styled",
+		"rubySass": false,
+		"screenshot": "",
+		"templateLanguage": "ftl",
+		"version": "7.3"
+	},
+	"main": "package.json",
+	"name": "sapphire-portal-theme",
+	"version": "1.0.0",
+	"devDependencies": {
+		"gulp": "^4.0.2"
+	},
+	"dependencies": {
+		"liferay-frontend-theme-styled": "^5.0.00",
+		"liferay-frontend-theme-unstyled": "^5.0.00",
+		"liferay-theme-tasks": "^10.3.0"
+	}
+}

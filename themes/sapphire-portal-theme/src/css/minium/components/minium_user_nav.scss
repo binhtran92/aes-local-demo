@@ -1,0 +1,60 @@
+.minium-user-nav {
+	align-items: center;
+	display: flex;
+	margin: 10px;
+	padding: 5px;
+	position: relative;
+	transition: border-radius $transition, background-color $transition;
+
+	@media screen and (hover: none) {
+		flex-direction: row-reverse;
+		position: absolute;
+	}
+
+	&:focus,
+	&:hover {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+
+		@media screen and (hover: none) {
+			filter: drop-shadow($shadow);
+		}
+	}
+
+	.minium-sidebar:not(:hover) & {
+		background-color: transparent;
+	}
+
+	@media screen and (hover: none) {
+		right: 0;
+
+		&:not(:focus) {
+			background-color: transparent;
+			overflow: hidden;
+			width: 42px;
+		}
+
+		&:focus {
+			width: 240px;
+		}
+	}
+
+	&__menu {
+		background-color: inherit;
+		border-radius: 8px 8px 0 0;
+		bottom: 100%;
+		left: 0;
+		position: absolute;
+		transition: opacity $transition, transform $transition;
+		width: 100%;
+
+		.minium-user-nav:not(:hover):not(:focus) & {
+			opacity: 0;
+			pointer-events: none;
+
+			@media screen and (hover: hover) {
+				transform: translateY(20px);
+			}
+		}
+	}
+}

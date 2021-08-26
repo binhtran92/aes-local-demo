@@ -1,0 +1,61 @@
+.commerce-search {
+	display: flex;
+	min-width: 300px;
+
+	&__input {
+		flex-grow: 1;
+    padding: 10px 0 0 0px;
+
+		input {
+			background-color: transparent;
+			border: 0;
+			caret-color: $color-theme;
+			font-size: 14px;
+			height: 100%;
+			width: 100%;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::placeholder {
+				color: $color-fg;
+				font-weight: bold;
+				opacity: 0.35;
+			}
+		}
+	}
+
+	&__button {
+		align-items: center;
+		color: currentColor;
+		display: flex;
+		font-size: 21px;
+		height: $frame-size;
+		justify-content: center;
+		width: $frame-size;
+
+		&:hover {
+			color: currentColor;
+		}
+
+		&.is-ninja {
+			opacity: 0;
+			pointer-events: none;
+			visibility: hidden;
+		}
+	}
+}
+
+//Sapphire search bar fixes for desktop 
+@media screen and (min-width: $bp-desktop) {
+	.commerce-topbar-button .js-toggle-search {
+		padding: 0 !important;
+		margin-top: 18px;
+	}
+
+	div#search-bar {
+		height: 60px;
+		max-width: 220px;
+	}
+}

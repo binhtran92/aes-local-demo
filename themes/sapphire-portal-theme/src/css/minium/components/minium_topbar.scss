@@ -1,0 +1,32 @@
+.minium-topbar {
+	background-color: $color-bg;
+	color: $color-fg-alt;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+
+	&__start {
+		margin-top: -1em;
+		padding-left: 50px;
+	}
+
+	&__start,
+	&__end {
+		display: flex;
+		flex: 1 1 auto;
+	}
+
+	&__end {
+		justify-content: flex-end;
+	}
+
+	&__second {
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__cart-wrapper {
+		margin-right: 4rem;
+	}
+}
