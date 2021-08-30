@@ -174,6 +174,133 @@ html {
 		}
 	}
 }
+//AESSolutio
+.aes-nav{
+	background-color: #102e54;	
+}
+.aes-logo{
+	height: 5.8em;
+}
+
+.frame-secondary{
+	padding-top: 5em;
+	background-color: #102e54;	
+	width: 100%;
+	z-index: 900;
+	position: fixed;
+	padding-bottom: 0.5em;
+	transition: all ease 500ms;
+}
+.menu-main {
+	float: right;
+	margin: 5px 250px 10px ;
+	position:relative;
+}
+.menu-main>li {
+	margin-left: 15px;
+	display:inline-block;
+}
+.menu-main>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: $aes-typeface;
+}
+.menu-main>li>a {
+	font-weight: 300;
+	color: #fff;
+	text-transform: uppercase
+}
+
+.menu-main li>a:hover {
+	background-color: transparent;
+	color: #a1c81b;
+	text-decoration: none
+}
+
+.menu-main li>a:active {
+	color: #a1c81b
+
+}
+.minium-topbar__start-aes {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.minium-topbar__middle-aes {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 40px;
+	padding-bottom: 20px;
+
+}
+.minium-topbar__search-aes {
+	border-bottom: 1px solid white;
+}
+
+.productsmenuboxleft {
+	float: left;
+	width: 50%;
+}
+.productsmenuboxright {
+	float: right;
+	width: 50%;
+}
+.gaslinkmenu{
+	float:left; 
+	/*width:50%;*/
+	width:100%;
+	font-size: 14px;
+	font-family: $aes-typeface;
+	text-transform:uppercase;
+	padding:0 15px;
+}
+
+.gaslinkmenu a{
+	color:#000000;
+	display:block;
+	padding:9px 0 3px 0;
+	display:inline-block;
+	text-decoration:none;
+	border-bottom:#fff 2px solid;
+}
+
+.gaslinkmenu a:hover{
+	border-bottom:#87cd12 2px solid;
+	color:#87cd12;
+}
+.bannerimgboxnew{
+	width: 100%;
+    float: left;
+    margin-top: 5px;
+}
+
+
+@media only screen and (min-width:979px) {
+	.productsmenuboxhover .productsmenubox{
+		display:none;
+		position:relative;}	
+	.productsmenuboxhover:hover .productsmenubox{
+		display:block;
+		position:absolute;
+		left:-88px; top:30px;
+		background:#fff;
+		width:620px;
+		border:#cccccc 1px solid;
+		padding:25px 15px;}
+	.productsmenuboxleft{width:50%;}
+	.productsmenuboxright{width:50%;}
+	.gaslinkmenu{padding:0;}
+	.gaslinkmenu a{border-bottom:none; padding-left: 10px;}
+	.gaslinkmenu a:hover{border-top:none; border-bottom:2px solid #87cd12;}
+}
+
+
+#minium .mini-cart-opener {
+    background-color: #102e54;
+    
+}
+
 
 //Blogs
 .portlet-blogs .entry-body, .portlet-blogs .widget-mode-detail {
