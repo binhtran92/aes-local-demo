@@ -1,61 +1,57 @@
 <#assign portalURL = themeDisplay.getURLPortal()>
 <#assign fullURL = portalURL + "/group">
 
-<div class="minium-frame__secondary">
-  <div class="col-8 p-0 d-flex">
+<div class="frame-secondary">
+  <ul class="menu-main">
+    <li class="productsmenuboxhover">
+      <a href="#">PRODUCTS</a>
 
-    <div class="col-3">
-      <a href="${fullURL}" class="homeitem">
-        Home
-      </a>
-    </div>
+      <#--  <div class="menutoparrow">
+        <img src="" alt="" >
+      </div>  -->
 
-    <div class="col-3 menuitem">
-      <div class="dropdown">
-        <button class="dropbtn"><a href="${fullURL}/catalogue">Order Now</a></button>
-            <#list nav_items as nav_item>
-				<#if nav_item.getName() == "Staff Catalogue">
-					<#assign
-					nav_item_layout = nav_item.getLayout()
-					/>
-					<#if (layoutPermission.contains(permissionChecker, nav_item_layout.getPlid(), "VIEW"))>
-                        <div class="dropdown-content">
-                            <a href="${fullURL}/staff-catalogue">BDM Catalogue</a>
-                        </div>
-					</#if>
-				</#if>
-            </#list>
-      </div>
-    </div>
+      <div class="productsmenubox">
 
-    <div class="col-3 menuitem">
-      <div class="dropdown">
-        <button class="dropbtn">My Orders</button>
-        <div class="dropdown-content">
-          <a href="${fullURL}/draft-orders">Draft Orders</a>
-          <a href="${fullURL}/placed-orders">Placed Orders</a>
+        <div class="productsmenuboxleft">
+
+          <div class="gaslinkmenu"><a href="#">Air Sampling</a></div>
+          <div class="gaslinkmenu"><a href="#">Gas Detectors</a></div>
+          <div class="gaslinkmenu"><a href="#">Dust & Aerosol Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Biological Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Environmental Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Electric & Magnetic Field Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Respirator Fit Tester</a></div>
+          <div class="gaslinkmenu"><a href="#">Heat Stress Monitors</a></div>
+
         </div>
-      </div>
-    </div>
 
-    <div class="col-3 menuitem">
-      <div class="dropdown">
-        <button class="dropbtn"><a href="${fullURL}/invoices">My Invoices</a></button>
-        <div class="dropdown-content">
-          <a href="${userManagementUrl}">My Account</a>
-          <#list nav_items as nav_item>
-          	<#if nav_item.getName() == "Invoice payment history">
-				<#assign
-				nav_item_layout = nav_item.getLayout()
-				/>
-				<#if (layoutPermission.contains(permissionChecker, nav_item_layout.getPlid(), "VIEW"))>
-					<a href="${fullURL}/invoice-payment-history">My Payments</a>
-				</#if>
-            </#if>
-          </#list>
+        <div class="productsmenuboxright">
+                  
+          <div class="gaslinkmenu"><a href="#">Indoor Air Quality Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Physiological Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Noise, Sound & Vibration Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Radiation Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Personal Safety Monitors</a></div>
+          <div class="gaslinkmenu"><a href="#">Light Meters</a></div>
+          <div class="gaslinkmenu"><a href="#">Calibration Gas</a></div>
+                                                
         </div>
-      </div>
-    </div>
+        <!--- banner sub menu -->
+        <div class="bannerimgboxnew">
+          <a class="resource_center prodductLabel active" href="h#" target="_blank">
+            <img src="${themeDisplay.getPathThemeImages()}/banner.webp" alt="banner" style="height: 117px" >
+          </a>
+        </div>
 
-  </div>
+      </div>
+    </li>
+
+
+    <li><a href="#">Hire</a></li>
+    <li><a href="#">Connected Solutions</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  
 </div>

@@ -2,8 +2,14 @@
 <#assign currentURL = themeDisplay.getURLCurrent()>
 <#assign fullURL = portalURL + "/group">
 
-<div class="commerce-topbar minium-topbar">
-	<div class="minium-topbar__start col-3">
+<div class="commerce-topbar minium-topbar aes-nav">
+
+	<div class="minium-topbar__start-aes col-5">
+		<a href="${fullURL}">
+			<img src="${themeDisplay.getPathThemeImages()}/aes-logo9.svg" class="aes-logo"/>
+		</a>
+	</div>
+	<div class="minium-topbar__middle-aes col-5">
 		<#if back_url?has_content>
 			<a class="commerce-topbar-button" href="${htmlUtil.escape(back_url)}">
 				<svg class="commerce-icon commerce-topbar-button__icon lexicon-icon lexicon-icon-arrow-back">
@@ -11,30 +17,23 @@
 				</svg>
 
 				<span class="commerce-topbar-button__label">
-					${languageUtil.get(locale, "back")}
+					${languageUtil.get(locale, "white")}
 				</span>
 			</a>
 		</#if>
 		<#if show_search_bar>
 			<label class="commerce-topbar-button js-toggle-search" for="commerce-search-input">
 				<a class="commerce-icon commerce-topbar-button__icon commerce-topbar-button__icon--not-active lexicon-icon lexicon-icon-search">
-					<img src="${themeDisplay.getPathThemeImages()}/icons/search-interface-symbol.png" style="height: 2em"/>
-				</a>
+					<img src="${themeDisplay.getPathThemeImages()}/search-icon.png" style="height: 1.5em; margin-left: 240px ; margin-top:10px"/>				</a>
 
-				<div class="minium-topbar__search">
+				<div class="minium-topbar__search-aes">
 					<@liferay_commerce_ui["search-bar"] id="search-bar" />
 					<@liferay_commerce_ui["search-results"] />
 				</div>
 		</#if>
 	</div>
 
-	<div class="minium-topbar__middle col-6">
-		<a href="${fullURL}">
-			<img src="${themeDisplay.getPathThemeImages()}/logos/SapphireGroup_Logo.png" class="top_logo"/>
-		</a>
-	</div>
-
-	<div class="minium-topbar__end col-3">
+	<div class="minium-topbar__end col-2">
 		<#if show_account_selector>
 			<div class="minium-topbar__account-selector-wrapper">
 				<@liferay_commerce_ui["account-selector"] />

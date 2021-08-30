@@ -16,7 +16,10 @@
 	src: url('../css/fonts/NeuzeitSLTStd-Book.otf');
 	}
 	
-
+@font-face{
+	font-family: 'Robotomedium';
+	src: url('../css/fonts/Roboto-Medium.ttf');
+	}
 $color-theme: #2D2A26;
 
 $footer-height: 120px !default;
@@ -27,6 +30,9 @@ $gsdc-btn-primary: () !default;
 
 $portlet-decorate-bg: #fff;
 
+
+//AES 
+$aes-typeface: 'Robotomedium',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 // Sapphire Branding
 
 $sapphire-typeface: 'NeuzeitSLTStdBook',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
